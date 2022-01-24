@@ -31,7 +31,27 @@
             <thead>
                 <tr>
                     <th colspan="5"> 
-                        <h1> Contact ++ </h1> 
+                        <h1> Contact++ </h1> 
+                        <form action="#search" method="POST">
+                         <label for="input-search-form" id="search-label">Who are you looking for?</label>
+                         <input list="search-options-list" type="text" name="input-search-form" id="input-search-form" placeholder="Start typing the name here..." value="">
+                         <datalist id="search-options-list">
+                             <option value="Angela Merkel" id="option-datalist"></option>
+                             <option value="Boris Johnson" id="option-datalist"></option>
+                             <option value="Joe Biden" id="option-datalist"></option>
+                             <option value="Vladimir Puttin" id="option-datalist"></option>
+                             <option value="Xavier Bettel" id="option-datalist"></option>
+                         </datalist>
+                         <input type="submit" value="Search" id="submit-search-button">
+                        </form>
+                        <p>Advanced filters</p>
+
+                        <form action="#search" method="POST">
+                            <label for="input-range-form" id="input-range-label-style">Select contacts by letter</label>
+                            <span>A</span>
+                            <input type="range" min="0" max="26" step="1" name="input-range-form" id="input-range-form-style" >
+                            <span>Z</span>
+                        </form>
                     </th>    
                 </tr>
                 <th class="th-col-title">First Name</th>
@@ -51,19 +71,20 @@
                     <td class="td-entry"id="td-options"><button id="button-edit">Edit</button> <button id="button-delete">Delete</button></td>
                 </tr>
 
-                <tr class="table-entry">
-                    <td class="td-entry"id="td-first-name">Barack</td>
-                    <td class="td-entry"id="td-last-name">Obama</td>
-                    <td class="td-entry"id="td-phone-number">+1-123-456-789</td>
-                    <td class="td-entry"id="td-address">1600 Pennsylvania Avenue NW, Washington, DC 20500, USA</td>
-                    <td class="td-entry"id="td-options"><button id="button-edit">Edit</button> <button id="button-delete">Delete</button></td>
-                </tr>
 
                 <tr class="table-entry">
                     <td class="td-entry"id="td-first-name">Boris</td>
                     <td class="td-entry"id="td-last-name">Johnson</td>
                     <td class="td-entry"id="td-phone-number">+44-123-456-789</td>
                     <td class="td-entry"id="td-address">10 Downing Street, SW1A 2AA London, United Kingdom</td>
+                    <td class="td-entry"id="td-options"><button id="button-edit">Edit</button> <button id="button-delete">Delete</button></td>
+                </tr>
+
+                <tr class="table-entry">
+                    <td class="td-entry"id="td-first-name">Joe</td>
+                    <td class="td-entry"id="td-last-name">Biden</td>
+                    <td class="td-entry"id="td-phone-number">+1-123-456-789</td>
+                    <td class="td-entry"id="td-address">1600 Pennsylvania Avenue NW, Washington, DC 20500, USA</td>
                     <td class="td-entry"id="td-options"><button id="button-edit">Edit</button> <button id="button-delete">Delete</button></td>
                 </tr>
 
@@ -100,5 +121,10 @@
     <footer>
 
     </footer>
+
+    <script src="index.js"></script>
+    <script src="jquery.js"></script>
+
+
 </body>
 </html>

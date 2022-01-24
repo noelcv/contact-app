@@ -16,6 +16,10 @@ h1 {
     position: relative;
 }
 
+body {
+    color: violet;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 .nav-bar li {
     display: inline-flex;
@@ -33,6 +37,23 @@ a.nav-link {
 }
 
 
+#submit-search-button {
+    background-color: violet;
+    border: 4px solid violet;
+    color: whitesmoke;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#input-search-form {
+    background-color: whitesmoke;
+    border-radius: 10%;
+    border: 4px solid violet;
+    width: 200px;
+    height: 20px;
+    text-align: left;
+}
+
 table {
     position: fixed;
     padding-top: 22px;
@@ -44,8 +65,9 @@ table {
 
 .th-col-title {
     text-align: center;
-    border: 2px solid black; 
-    background-color: rgb(179, 173, 173);
+    border: 2px solid black;
+    color: black;
+    background-color: violet;
 }
 
 .td-entry {
@@ -56,22 +78,24 @@ table {
 
 #button-edit {
     border: 2px solid black;
-    background-color: yellow;
+    background-color: violet;
+    color: white;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #button-delete {
     border: 2px solid black;
-    background-color: red;
-    color: black;
+    background-color: whitesmoke;
+    color: violet;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #button-add-contact {
     text-align: center;
-    background-color: #37f589;
+    background-color: #4a37f5;
+    color: whitesmoke;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
