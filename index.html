@@ -13,17 +13,19 @@
 <body>
 
     <header>
-        <h1>Contact++</h1>
-        <p id="motto-header">Keep people closer</p>
 
         <nav class="nav-bar">
             <ul>
-                <li><a class="nav-link" href="#searchmode">Search Mode</a></li>
-                <li><a class="nav-link" href="#browse">Browse Collection</a></li>
-                <li><a class="nav-link" href="#help">Help</a></li>
+                <li><a class="nav-link" href="index.html">Home</a></li>
+                <li><a class="nav-link" href="addcontact.html">Add Contact</a></li>
+                <li><a class="nav-link" href="edit.html">Edit</a></li>
             </ul>
         </nav>
 
+        <h1>Contact++</h1>
+        <p id="motto-header">Keep people closer</p>
+        <br>
+        <h2>Search</h2>
     </header>
 
     <main>
@@ -31,7 +33,6 @@
             <thead>
                 <tr>
                     <th colspan="5"> 
-                        <h1> Contact++ </h1> 
                         <form action="#search" method="POST">
                          <label for="input-search-form" id="search-label">Who are you looking for?</label>
                          <input list="search-options-list" type="text" name="input-search-form" id="input-search-form" placeholder="Start typing the name here..." value="">
@@ -61,14 +62,14 @@
                 <th class="th-col-title" id="th-options">Options</th>
             </thead>
             
-            <tbody>
+            <tbody class="table-body">
                 
                 <tr class="table-entry">
                     <td class="td-entry"id="td-first-name">Angela</td>
                     <td class="td-entry"id="td-last-name">Merkel</td>
                     <td class="td-entry"id="td-phone-number">+49-123-456-789</td>
                     <td class="td-entry"id="td-address">Am Wriezener bhf, 10243 Berlin, Germany</td>
-                    <td class="td-entry"id="td-options"><button id="button-edit">Edit</button> <button id="button-delete">Delete</button></td>
+                    <td class="td-entry"id="td-options"><form action="edit.html"><input type="submit" name="button-edit" id="button-edit" value="Edit"></form> <form action="index.html"> <input type="submit" name="button-delete" id="button-delete" class="button-delete" value="Delete"></form></td>
                 </tr>
 
 
@@ -77,7 +78,7 @@
                     <td class="td-entry"id="td-last-name">Johnson</td>
                     <td class="td-entry"id="td-phone-number">+44-123-456-789</td>
                     <td class="td-entry"id="td-address">10 Downing Street, SW1A 2AA London, United Kingdom</td>
-                    <td class="td-entry"id="td-options"><button id="button-edit">Edit</button> <button id="button-delete">Delete</button></td>
+                    <td class="td-entry"id="td-options"><form action="edit.html"><input type="submit" name="button-edit" id="button-edit" value="Edit"></form> <form action="index.html"> <input type="submit" name="button-delete" id="button-delete" class="button-delete" value="Delete"></form></td>
                 </tr>
 
                 <tr class="table-entry">
@@ -85,7 +86,7 @@
                     <td class="td-entry"id="td-last-name">Biden</td>
                     <td class="td-entry"id="td-phone-number">+1-123-456-789</td>
                     <td class="td-entry"id="td-address">1600 Pennsylvania Avenue NW, Washington, DC 20500, USA</td>
-                    <td class="td-entry"id="td-options"><button id="button-edit">Edit</button> <button id="button-delete">Delete</button></td>
+                    <td class="td-entry"id="td-options"><form action="edit.html"><input type="submit" name="button-edit" id="button-edit" value="Edit"></form> <form action="index.html"> <input type="submit" name="button-delete" id="button-delete" class="button-delete" value="Delete"></form></td>    
                 </tr>
 
                 <tr class="table-entry">
@@ -93,8 +94,7 @@
                     <td class="td-entry"id="td-last-name">Putin</td>
                     <td class="td-entry"id="td-phone-number">+7-123-456-789</td>
                     <td class="td-entry"id="td-address">The Moscow Kremlin, 103132, Moscow, Russia</td>
-                    <td class="td-entry"id="td-options"><button id="button-edit">Edit</button> <button id="button-delete">Delete</button></td>
-
+                    <td class="td-entry"id="td-options"><form action="edit.html"><input type="submit" name="button-edit" id="button-edit" value="Edit"></form> <form action="index.html"> <input type="submit" name="button-delete" id="button-delete" class="button-delete" value="Delete"></form></td>
                 </tr>
 
                 <tr class="table-entry">
@@ -102,7 +102,7 @@
                     <td class="td-entry"id="td-last-name">Bettel</td>
                     <td class="td-entry"id="td-phone-number">+352-123-456-789</td>
                     <td class="td-entry"id="td-address">1, rue de Strasbourg, L-1290 Luxembourg</td>
-                    <td class="td-entry"id="td-options"><button id="button-edit">Edit</button> <button id="button-delete">Delete</button></td>
+                    <td class="td-entry"id="td-options"><form action="edit.html"><input type="submit" name="button-edit" id="button-edit" value="Edit"></form> <form action="index.html"> <input type="submit" name="button-delete" id="button-delete" class="button-delete" value="Delete"></form></td>    
                 </tr>
             </tbody>
             
@@ -110,7 +110,7 @@
                 <tr>
                     <th colspan="4">
                         <td>
-                            <button id="button-add-contact">Add contact</button>
+                            <button type="submit" id="button-add-contact" value="Add contact">Add contact</button>
                         </td>
                     </th>
                 </tr>
@@ -122,9 +122,14 @@
 
     </footer>
 
-    <script src="index.js"></script>
-    <script src="jquery.js"></script>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+     <script src="index.js"></script>
+   
+   
+   <script> 
 
+</script>
 
 </body>
 </html>

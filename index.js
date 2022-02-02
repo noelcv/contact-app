@@ -1,16 +1,54 @@
 
-const addressBook = {
-    _contacts: [
-        {firstName: firstName, lastName:lastName, phoneNumber:phoneNumber, address:address}
-    ],
+let script = document.createElement('script');
+script.src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js";
+script.type = "text/javascript";
 
-addContact(firstName, lastName, phoneNumber, address) {
-   let contact = {firstName: firstName, lastName: lastName, phoneNumber:phoneNumber, address:address};
-   this._contacts.push(contact)
-}
 
-};
 
+
+
+
+
+
+
+$("#add-contact-form").on("submit", function(event) {
+
+    event.preventDefault();
+    
+    let getFirstName = $(this).find('#label-first-name').val();
+    let firstName = getFirstName.charAt(0).toUpperCase()+getFirstName.substring(1).toLowerCase();
+    
+    let getLastName = $(this).find('#label-last-name').val();
+    let lastName = getLastName.charAt(0).toUpperCase()+getLastName.substring(1).toLowerCase(); //add validation rule to capitalize other surnames
+    
+    let getPhoneNumber = $(this).find('#label-phone-number').val();
+    let phoneNumber = getPhoneNumber;
+    
+    let getAddress = $(this).find("#label-address").val();
+    let address = getAddress;
+
+    $("#span-log-profile-first-name").text(firstName);
+    $("#span-log-profile-last-name").text(lastName);
+    $("#span-log-profile-phone-number").text(getPhoneNumber);
+    $("#span-log-profile-address").text(address);
+    $("#main-contact").css("display", "none")
+    $("#contact-profile").css("display", "on");
+
+   
+    console.log("First Name: " + firstName);
+    console.log("Last Name: " + lastName);
+    console.log("Phone Number: " + phoneNumber);
+    console.log("Address: " + address);
+
+})
+
+$(document).ready(function() {
+
+});
+
+
+
+/*
 class Contact {
     constructor(firstName, lastName, phoneNumber, address) {
         this._firstName = firstName;
@@ -66,4 +104,14 @@ const editContact = () => {
     
 }
 
-$('#input-search-form').text(firstName.contact)
+const addressBook = {
+    _contacts: [
+        {firstName: firstName, lastName:lastName, phoneNumber:phoneNumber, address:address}
+    ],
+
+addContact(firstName, lastName, phoneNumber, address) {
+   let contact = {firstName: firstName, lastName: lastName, phoneNumber:phoneNumber, address:address};
+   this._contacts.push(contact)
+}
+
+};*/
