@@ -1,5 +1,5 @@
 html {
-    background-color: white;
+    background-color:white;
 }
 
 
@@ -90,7 +90,15 @@ a.nav-link {
 }
 
 
-#reset-new-contact-button {
+#submit-contact-button {
+    text-align: center;
+    background-color: #222;
+    color: violet;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#restart-contact-button {
     border: 2px solid black;
     background-color: whitesmoke;
     color: violet;
@@ -106,13 +114,7 @@ a.nav-link {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#button-add-contact-alt {
-    text-align: center;
-    background-color: #555;
-    color: violet;
-    font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+
 
 th {
     text-align: center;
@@ -159,7 +161,12 @@ td {
     }
 
 .main-table {
-    text-align: center;
+    display: on;
+    text-align: justify;
+    padding-left: 200 px;
+    letter-spacing: 1px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
  
 }
 

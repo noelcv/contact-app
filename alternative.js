@@ -68,10 +68,10 @@ const addRow = () => {
     const row = document.createElement("tr");
 
     const tdFirstName = document.createElement('td');
-    tdFirstName.textContent = inputFirstName.value;
+    tdFirstName.textContent = inputFirstName.value.charAt(0).toUpperCase() + inputFirstName.value.substring(1).toLowerCase();
 
     const tdLastName = document.createElement('td');
-    tdLastName.textContent = inputLastName.value;
+    tdLastName.textContent = inputLastName.value.charAt(0).toUpperCase() + inputLastName.value.substring(1).toLowerCase();
 
     const tdPhoneNumber = document.createElement('td');
     tdPhoneNumber.textContent = inputPhoneNumber.value;
@@ -81,9 +81,12 @@ const addRow = () => {
 
     const editButton = document.createElement('button');
     editButton.textContent = "edit";
+    editButton.classList = "button-edit-alt"
+    
 
     const deleteButton = document.createElement('button');
     deleteButton.textContent = "delete"
+    deleteButton.classList = "button-delete-alt"
     
     tableBody.appendChild(row);
     row.appendChild(tdFirstName);
@@ -130,17 +133,16 @@ tableBody.addEventListener("click", (event) => {
             
                 const inputFirstName = document.createElement("input");
                 inputFirstName.type = "text";
-                inputFirstName.value = tdFirstName.textContent;
+                inputFirstName.value = tdFirstName.textContent.charAt(0).toUpperCase() + tdFirstName.textContent.substring(1).toLowerCase();
                 row.insertBefore(inputFirstName, tdFirstName);
-                row.removeChild(tdFirstName)
-
+                row.removeChild(tdFirstName);
 
 
                 const inputLastName = document.createElement("input");
                 inputLastName.type = "text";
-                inputLastName.value = tdLastName.textContent;
+                inputLastName.value = tdLastName.textContent.charAt(0).toUpperCase() + tdLastName.textContent.substring(1).toLowerCase();
                 row.insertBefore(inputLastName, tdLastName);
-                row.removeChild(tdLastName)
+                row.removeChild(tdLastName);
 
 
                 const inputPhoneNumber = document.createElement("input");
@@ -164,12 +166,12 @@ tableBody.addEventListener("click", (event) => {
                 const inputAddress = row.children[3];
 
                 const tdFirstName = document.createElement('td');
-                tdFirstName.textContent = inputFirstName.value;
+                tdFirstName.textContent = inputFirstName.value.charAt(0).toUpperCase() + inputFirstName.value.substring(1).toLowerCase();                ;
                 row.insertBefore(tdFirstName, inputFirstName);
                 row.removeChild(inputFirstName);
 
                 const tdLastName = document.createElement('td');
-                tdLastName.textContent = inputLastName.value;
+                tdLastName.textContent = inputLastName.value.charAt(0).toUpperCase() + inputLastName.value.substring(1).toLowerCase();
                 row.insertBefore(tdLastName, inputLastName);
                 row.removeChild(inputLastName);
 
