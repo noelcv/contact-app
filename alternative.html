@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/css/alt.css">
+    <title>Contact++</title>
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="nav-bar">
+            <ul>
+                <li><a class="nav-link" href="alt.html">Home</a></li>
+                <li><a class="nav-link" href="alt.html">Add Contact</a></li>
+                <li><a class="nav-link" href="alt.html">Edit</a></li>
+            </ul>
+        </nav>
+
+        <h1>Contact++</h1>
+        <p id="motto-header">Keep people closer</p>
+        <br>
+       
+    </header>
+
+    <main>
+        <hr class= "section-line"><br><br>
+
+        <section class="search-bar">
+        
+            <h2>Search</h2>
+        
+            <form action="alt.html" method="GET"></form>
+        
+                <label for="input-search-form" id="search-label">Who are you looking for?</label>
+        
+                <input list="search-options-list" type="text" name="input-search-form" id="input-search-form" placeholder="Start typing the name here..." value="">
+        
+        
+                <datalist id="search-options-list">
+        
+                    <option value="" id="option-datalist"></option>
+                //create a val attr. to match the first and last names of new added contact
+                
+                </datalist>
+            
+                <input type="submit" value="Search" id="submit-search-button">
+           </form>
+          
+        </section>
+
+        <br><br><br><br><hr class= "section-line"><br><br>
+
+        <section class="add-contact" id="add-contact">
+            <h2>Add new contact</h2>
+            <form action="#" method="GET" id="add-form">
+            <label for="input-first-name" value="Name" class="input-label">Name</label>        
+            <input type="text" class="input-entry-alt"id="input-first-name" name="input-first-name" value="" required></td>
+            
+        
+            <label for="input-last-name" value="Name" class="input-label">Last Name</label>
+            <input type="text" class="input-entry-alt"id="input-last-name" name="input-last-name"></td>
+           
+        
+            <label for="input-phone-number" value="Name" class="input-label">Phone Number</label>
+            <input type="number" class="input-entry-alt" id="input-phone-number" name="input-phone-number" minlenght="3" maxlength="12" required></td>
+            
+        
+            <label for="input-address" value="Name" class="input-label">Address</label>
+            <input type="textarea" class="input-entry-alt" id="input-address" name="input-address"></td>
+            
+    
+            <input type="submit" id="submit-contact-button" name="submit-contact-button" value="Add new contact">
+            </form>
+
+            <form>
+            <input type="submit" id="restart-contact-button" name="restart-contact-button" value="Restart">
+            </form>
+                
+
+        </section>
+
+
+        <br><br><br><br><hr class= "section-line"><br><br>
+    
+        
+        <section class="search-results">
+
+
+            <h2>Search Results</h2>
+            <table class='main-table' id='main-table'>
+                <thead>
+                    <th class="th-col-title">Letter</th>
+                    <th class="th-col-title">First Name</th>
+                    <th class="th-col-title">Last Name</th>
+                    <th class="th-col-title">Phone</th>
+                    <th class="th-col-title">Address</th>
+                    <th class="th-col-title" id="th-options"></th>
+                </thead>
+            
+                <tbody class="table-body" id="table-body">
+
+                
+                   
+
+                </tbody>
+            
+            
+            
+            </table>
+
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src ="alternative.js"></script>
+   
+
+</body>
+</html>
+
+
+
