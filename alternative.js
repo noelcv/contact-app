@@ -51,6 +51,17 @@ const inputLastName = document.querySelector("#input-last-name");
 const inputPhoneNumber = document.querySelector("#input-phone-number");
 const inputAddress = document.querySelector("#input-address");
 
+const restartButton = document.querySelector("#restart-contact-button");
+
+
+const clearFields = () => {
+
+    document.getElementById("input-first-name").value = "";
+    document.getElementById("input-last-name").value = "";
+    document.getElementById("input-phone-number").value = "";
+    document.getElementById("input-address").value = "";
+}
+
 
 const addRow = () => {
         
@@ -85,6 +96,7 @@ const addRow = () => {
     return row;
 }
 
+
 addForm.addEventListener("submit", (event) => {
     event.preventDefault();
 
@@ -92,15 +104,16 @@ addForm.addEventListener("submit", (event) => {
 
   
             tableBody.appendChild(row);
+            clearFields();
     
     })
 
 
-    tableBody.addEventListener("click", (event) => {
+tableBody.addEventListener("click", (event) => {
 
-        event.stopPropagation();
+    event.stopPropagation();
 
-        if(event.target.tagName === "BUTTON") {
+    if(event.target.tagName === "BUTTON") {
             const button = event.target;
             const row = button.parentNode;
             const tableBody = row.parentNode;
@@ -177,3 +190,11 @@ addForm.addEventListener("submit", (event) => {
 
 
     })
+
+
+
+
+restartButton.addEventListener("click", (event) => {
+    event.preventDefault();
+    clearFields();
+})
