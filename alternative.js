@@ -55,8 +55,6 @@ const inputAddress = document.querySelector("#input-address");
 const addRow = () => {
         
     const row = document.createElement("tr");
-    const tdFirstLetter = document.createElement('td');
-    tdFirstLetter.textContent = inputFirstName.value.charAt(0);
 
     const tdFirstName = document.createElement('td');
     tdFirstName.textContent = inputFirstName.value;
@@ -77,7 +75,6 @@ const addRow = () => {
     deleteButton.textContent = "delete"
     
     tableBody.appendChild(row);
-    row.appendChild(tdFirstLetter);
     row.appendChild(tdFirstName);
     row.appendChild(tdLastName);
     row.appendChild(tdPhoneNumber);
@@ -101,6 +98,8 @@ addForm.addEventListener("submit", (event) => {
 
     tableBody.addEventListener("click", (event) => {
 
+        event.stopPropagation();
+
         if(event.target.tagName === "BUTTON") {
             const button = event.target;
             const row = button.parentNode;
@@ -108,17 +107,13 @@ addForm.addEventListener("submit", (event) => {
             if(button.textContent === "delete") {
                 tableBody.removeChild(row);
             } else if (button.textContent === "edit") {
-                const tdFirstLetter = row.children[0];
-                const tdFirstName = row.children[1];
-                const tdLastName = row.children[2];
-                const tdPhoneNumber = row.children[3];
-                const tdAddress = row.children[4];
+                const tdFirstName = row.children[0];
+                const tdLastName = row.children[1];
+                const tdPhoneNumber = row.children[2];
+                const tdAddress = row.children[3];
                 
                 
-                const inputFirstLetter = document.createElement("input");
-                inputFirstLetter.type = "hidden";
-                
-                
+        
             
                 const inputFirstName = document.createElement("input");
                 inputFirstName.type = "text";
@@ -127,9 +122,6 @@ addForm.addEventListener("submit", (event) => {
                 row.removeChild(tdFirstName)
 
 
-                inputFirstLetter.value = inputFirstName.value.charAt(0);
-                row.insertBefore(inputFirstLetter, tdFirstLetter);
-                row.removeChild(tdFirstLetter);
 
                 const inputLastName = document.createElement("input");
                 inputLastName.type = "text";
@@ -153,21 +145,14 @@ addForm.addEventListener("submit", (event) => {
                 button.textContent = "save";
 
             } else if (button.textContent === "save") {
-                const inputFirstLetter = row.children[0];
-                const inputFirstName = row.children[1];
-                const inputLastName = row.children[2];
-                const inputPhoneNumber = row.children[3];
-                const inputAddress = row.children[4];
-
-
-                const tdFirstLetter = document.createElement('td');
-                tdFirstLetter.textContent = inputFirstName.value.charAt(0);
-                
+                const inputFirstName = row.children[0];
+                const inputLastName = row.children[1];
+                const inputPhoneNumber = row.children[2];
+                const inputAddress = row.children[3];
 
                 const tdFirstName = document.createElement('td');
                 tdFirstName.textContent = inputFirstName.value;
                 row.insertBefore(tdFirstName, inputFirstName);
-                row.insertBefore(tdFirstLetter, tdFirstName);
                 row.removeChild(inputFirstName);
 
                 const tdLastName = document.createElement('td');
