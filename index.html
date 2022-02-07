@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="resources/css/index.css">
+    <link rel="stylesheet" href="resources/css/main.css">
     <title>Contact++</title>
 </head>
 
@@ -14,109 +12,87 @@
 
     <header>
 
-        <nav class="nav-bar">
-            <ul>
-                <li><a class="nav-link" href="index.html">Home</a></li>
-                <li><a class="nav-link" href="addcontact.html">Add Contact</a></li>
-                <li><a class="nav-link" href="edit.html">Edit</a></li>
-            </ul>
-        </nav>
-
         <h1>Contact++</h1>
-        <p id="motto-header">Keep people closer</p>
+        <p id="motto-header">Keep them closer</p>
         <br>
-        <h2>Search</h2>
+       
     </header>
 
     <main>
-        <table class='main-table'>
-            <thead>
-                <tr>
-                    <th colspan="5"> 
-                        <form action="#search" method="POST">
-                         <label for="input-search-form" id="search-label">Who are you looking for?</label>
-                         <input list="search-options-list" type="text" name="input-search-form" id="input-search-form" placeholder="Start typing the name here..." value="">
-                         <datalist id="search-options-list">
-                             <option value="Angela Merkel" id="option-datalist"></option>
-                             <option value="Boris Johnson" id="option-datalist"></option>
-                             <option value="Joe Biden" id="option-datalist"></option>
-                             <option value="Vladimir Puttin" id="option-datalist"></option>
-                             <option value="Xavier Bettel" id="option-datalist"></option>
-                         </datalist>
-                         <input type="submit" value="Search" id="submit-search-button">
-                        </form>
-                        <p>Advanced filters</p>
+        <hr class= "section-line"><br><br>
 
-                        <form action="#search" method="POST">
-                            <label for="input-range-form" id="input-range-label-style">Select contacts by letter</label>
-                            <span>A</span>
-                            <input type="range" min="0" max="26" step="1" name="input-range-form" id="input-range-form-style" >
-                            <span>Z</span>
-                        </form>
-                    </th>    
-                </tr>
-                <th class="th-col-title">First Name</th>
-                <th class="th-col-title">Last Name</th>
-                <th class="th-col-title">Phone</th>
-                <th class="th-col-title">Address</th>
-                <th class="th-col-title" id="th-options">Options</th>
-            </thead>
+        <section class="search-bar" id="search-area">
+        
+            <h2>Search</h2>
+        
+            <form action="#" method="GET" class="search-form"></form>
+        
+                <label for="input-search-form" id="search-label">Who are you looking for?</label>
+        
+                <input type="text" name="input-search-form" class="input-search-form" id="input-search-form" placeholder="Start typing the name here..." value="" onkeyup="searchTable()">
+        
+                <input type="submit" value="Search" id="submit-search-button">
+           </form>
+          
+        </section>
+
+        <br><br><br><br><hr class= "section-line"><br><br>
+
+        <section class="add-contact" id="add-contact">
+            <h2>Add new contact</h2>
+            <form action="#" method="GET" id="add-form">
+            <label for="input-first-name" value="Name" class="input-label">Name</label> <br>       
+            <input type="text" class="input-entry"id="input-first-name" name="input-first-name" value="" required></td><br> <br> 
             
-            <tbody class="table-body">
+            
+            <label for="input-last-name" value="Name" class="input-label">Last Name</label> <br> 
+            <input type="text" class="input-entry-alt"id="input-last-name" name="input-last-name" required></td> <br><br> 
+           
+        
+            <label for="input-phone-number" value="Name" class="input-label">Phone Number</label> <br> 
+            <input type="number" class="input-entry" id="input-phone-number" name="input-phone-number" minlenght="3" maxlength="12" required></td> <br> <br> 
+            
+        
+            <label for="input-address" value="Name" class="input-label">Address</label> <br> 
+            <input type="textarea" class="input-entry" id="input-address" name="input-address" required></td> <br> <br> 
+            
+    
+            <input type="submit" id="submit-contact-button" name="submit-contact-button" value="Add new contact"> <br> <br> 
+            </form>
+
+            <button id="restart-contact-button" name="restart-contact-button">Restart</button> 
+
+            
                 
-                <tr class="table-entry">
-                    <td class="td-entry"id="td-first-name">Angela</td>
-                    <td class="td-entry"id="td-last-name">Merkel</td>
-                    <td class="td-entry"id="td-phone-number">+49-123-456-789</td>
-                    <td class="td-entry"id="td-address">Am Wriezener bhf, 10243 Berlin, Germany</td>
-                    <td class="td-entry"id="td-options"><form action="edit.html"><input type="submit" name="button-edit" id="button-edit" value="Edit"></form> <form action="index.html"> <input type="submit" name="button-delete" id="button-delete" class="button-delete" value="Delete"></form></td>
-                </tr>
+
+        </section>
 
 
-                <tr class="table-entry">
-                    <td class="td-entry"id="td-first-name">Boris</td>
-                    <td class="td-entry"id="td-last-name">Johnson</td>
-                    <td class="td-entry"id="td-phone-number">+44-123-456-789</td>
-                    <td class="td-entry"id="td-address">10 Downing Street, SW1A 2AA London, United Kingdom</td>
-                    <td class="td-entry"id="td-options"><form action="edit.html"><input type="submit" name="button-edit" id="button-edit" value="Edit"></form> <form action="index.html"> <input type="submit" name="button-delete" id="button-delete" class="button-delete" value="Delete"></form></td>
-                </tr>
+        <br><br><br><br><hr class= "section-line"><br><br>
+    
+        
+        <section class="search-results">
 
-                <tr class="table-entry">
-                    <td class="td-entry"id="td-first-name">Joe</td>
-                    <td class="td-entry"id="td-last-name">Biden</td>
-                    <td class="td-entry"id="td-phone-number">+1-123-456-789</td>
-                    <td class="td-entry"id="td-address">1600 Pennsylvania Avenue NW, Washington, DC 20500, USA</td>
-                    <td class="td-entry"id="td-options"><form action="edit.html"><input type="submit" name="button-edit" id="button-edit" value="Edit"></form> <form action="index.html"> <input type="submit" name="button-delete" id="button-delete" class="button-delete" value="Delete"></form></td>    
-                </tr>
 
-                <tr class="table-entry">
-                    <td class="td-entry"id="td-first-name">Vladimir</td>
-                    <td class="td-entry"id="td-last-name">Putin</td>
-                    <td class="td-entry"id="td-phone-number">+7-123-456-789</td>
-                    <td class="td-entry"id="td-address">The Moscow Kremlin, 103132, Moscow, Russia</td>
-                    <td class="td-entry"id="td-options"><form action="edit.html"><input type="submit" name="button-edit" id="button-edit" value="Edit"></form> <form action="index.html"> <input type="submit" name="button-delete" id="button-delete" class="button-delete" value="Delete"></form></td>
-                </tr>
-
-                <tr class="table-entry">
-                    <td class="td-entry"id="td-first-name">Xavier</td>
-                    <td class="td-entry"id="td-last-name">Bettel</td>
-                    <td class="td-entry"id="td-phone-number">+352-123-456-789</td>
-                    <td class="td-entry"id="td-address">1, rue de Strasbourg, L-1290 Luxembourg</td>
-                    <td class="td-entry"id="td-options"><form action="edit.html"><input type="submit" name="button-edit" id="button-edit" value="Edit"></form> <form action="index.html"> <input type="submit" name="button-delete" id="button-delete" class="button-delete" value="Delete"></form></td>    
-                </tr>
-            </tbody>
+            <h2>Browse Collection</h2>
+            <table class='main-table' id='main-table'>
+                <thead class="table-head" id="table-head">
+                    <th class="th-col-title" id="th-first-name">First Name</th>
+                    <th class="th-col-title" id="th-last-name">Last Name</th>
+                    <th class="th-col-title" id="th-phone-number">Phone</th>
+                    <th class="th-col-title" id="th-address">Address</th>
+                    <th class="th-col-title" id="th-options"></th>
+                </thead>
             
-            <tfoot>
-                <tr>
-                    <th colspan="4">
-                        <td>
-                            <button type="submit" id="button-add-contact" value="Add contact">Add contact</button>
-                        </td>
-                    </th>
-                </tr>
-            </tfoot>
+                <tbody class="table-body" id="table-body">
+                    <!--the results are created dinamically in JS-->
+                </tbody>
             
-        </table>
+            
+            
+            </table>
+
+        </section>
     </main>
     <footer>
 
@@ -124,12 +100,11 @@
 
    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-     <script src="index.js"></script>
+    <script src ="app.js"></script>
    
-   
-   <script> 
-
-</script>
 
 </body>
 </html>
+
+
+
