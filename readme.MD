@@ -14,3 +14,9 @@ Code with Bibek
 There is a never-ending range of possibilities to expand the functionalities, but an incomplete piece of work today is better than a perfect piece of work that never comes to see the daylight. :)
 
 Noel Vieira
+line 84 create field validation rules 
+line 240 resolve search bar issues, by displaying it somewhere else
+refactor js to jquery
+
+https://www.youtube.com/watch?v=vYoGKtdl7dQ&ab_channel=CodeWithMark
+hint editable attr

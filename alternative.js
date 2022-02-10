@@ -1,7 +1,3 @@
-let script = document.createElement('script');
-script.src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js";
-script.type = "text/javascript";
-
 //Contact Class: represents a Contact
 
 class Contact {
@@ -26,7 +22,7 @@ class Contact {
     get address() {
         return this._address;
     }
- 
+
     set firstName(newFirstName) {
         this._firstName = newFirstName;
     }
@@ -45,24 +41,18 @@ class Contact {
 
 }
 
-// Interface
-const addressBook = [];
+// UI class: Handles UI tasks
+
 
 const addForm = document.querySelector("#add-form");
+const mainTable = document.querySelector("#main-table");
+const tableHead = document.querySelector("#table-head")
+const tableBody = document.querySelector("#table-body");
 const inputFirstName = document.querySelector("#input-first-name");
 const inputLastName = document.querySelector("#input-last-name");
 const inputPhoneNumber = document.querySelector("#input-phone-number");
 const inputAddress = document.querySelector("#input-address");
-
-const mainTable = document.querySelector("#main-table");
-const tableHead = document.querySelector("#table-head");
-
-const tableBody = document.querySelector("#table-body");
-
 const rows = tableBody.children;
-const searchArea = document.querySelector("#search-area");
-
-
 
 const restartButton = document.querySelector("#restart-contact-button");
 
@@ -77,44 +67,25 @@ const clearFields = () => {
 
 
 const addRow = () => {
-    
-    //get the values
-    const getFirstNameInput = inputFirstName.value.charAt(0).toUpperCase() + inputFirstName.value.substring(1).toLowerCase();
-    const getLastNameInput =  inputLastName.value.charAt(0).toUpperCase() + inputLastName.value.substring(1).toLowerCase();
-    const getPhoneNumberInput = inputPhoneNumber.value;
-    const getAddressInput = inputAddress.value;
-
-
-    //create field validation rules 
-
-    //create an instance of a Contact
-    let newContact = new Contact(getFirstNameInput,getLastNameInput,getPhoneNumberInput, getAddressInput);
-
-    addressBook.push(newContact);
-    console.log(addressBook);
-
-    //create the tr and tds
+        
     const row = document.createElement("tr");
 
     const tdFirstName = document.createElement('td');
-    tdFirstName.textContent = `${newContact._firstName}`;
-    tdFirstName.classList = "td-entry";
+    tdFirstName.textContent = inputFirstName.value.charAt(0).toUpperCase() + inputFirstName.value.substring(1).toLowerCase();
 
     const tdLastName = document.createElement('td');
-    tdLastName.textContent = `${newContact._lastName}`;
-    tdLastName.classList = "td-entry";
+    tdLastName.textContent = inputLastName.value.charAt(0).toUpperCase() + inputLastName.value.substring(1).toLowerCase();
 
     const tdPhoneNumber = document.createElement('td');
-    tdPhoneNumber.textContent = `${newContact._phoneNumber}`;
-    tdLastName.classList = "td-entry";
+    tdPhoneNumber.textContent = inputPhoneNumber.value;
 
     const tdAddress = document.createElement('td');
-    tdAddress.textContent = `${newContact._address}`;
-    tdAddress.classList = "td-entry";
+    tdAddress.textContent = inputAddress.value;
 
     const editButton = document.createElement('button');
     editButton.textContent = "edit";
     editButton.classList = "button-edit-alt"
+    
 
     const deleteButton = document.createElement('button');
     deleteButton.textContent = "delete"
@@ -131,14 +102,16 @@ const addRow = () => {
     return row;
 }
 
-//Event Listener to create contact and add row
+
 addForm.addEventListener("submit", (event) => {
     event.preventDefault();
 
-        const row = addRow();
+    const row = addRow();
 
-        tableBody.appendChild(row);
-        clearFields();
+  
+            tableBody.appendChild(row);
+            clearFields();
+    
     })
 
 
@@ -151,8 +124,7 @@ tableBody.addEventListener("click", (event) => {
             const row = button.parentNode;
             const tableBody = row.parentNode;
             if(button.textContent === "delete") {
-    
-             tableBody.removeChild(row);
+                tableBody.removeChild(row);
             } else if (button.textContent === "edit") {
                 const tdFirstName = row.children[0];
                 const tdLastName = row.children[1];
@@ -165,15 +137,11 @@ tableBody.addEventListener("click", (event) => {
                 row.insertBefore(inputFirstName, tdFirstName);
                 row.removeChild(tdFirstName);
 
-    
-
                 const inputLastName = document.createElement("input");
                 inputLastName.type = "text";
                 inputLastName.value = tdLastName.textContent.charAt(0).toUpperCase() + tdLastName.textContent.substring(1).toLowerCase();
                 row.insertBefore(inputLastName, tdLastName);
                 row.removeChild(tdLastName);
-
-                
 
                 const inputPhoneNumber = document.createElement("input");
                 inputPhoneNumber.type = "number";
@@ -186,7 +154,6 @@ tableBody.addEventListener("click", (event) => {
                 inputAddress.value = tdAddress.textContent;
                 row.insertBefore(inputAddress, tdAddress);
                 row.removeChild(tdAddress);
-
 
                 button.textContent = "save";
 
@@ -216,22 +183,17 @@ tableBody.addEventListener("click", (event) => {
                 row.insertBefore(tdAddress, inputAddress);
                 row.removeChild(inputAddress);
 
-                //this will create a new contact with the updated values, but it doesn't remove the original contact 
-                const editedContact = new Contact(inputFirstName.value, inputLastName.value, inputPhoneNumber.value, inputAddress.value);
-                addressBook.push(editedContact);
-
-                console.log(editedContact);
-                console.log(addressBook);
-
                 button.textContent = "edit";
             }
 
         }
 
 
-})
+    })
 
-//event listener to clear the fields
+
+
+
 restartButton.addEventListener("click", (event) => {
     event.preventDefault();
     clearFields();
@@ -240,23 +202,23 @@ restartButton.addEventListener("click", (event) => {
 
 console.log(rows);
 
-//227:243 searchTable() citation: AB Nation Programmers, "Build a Search Bar & Filter Table Using JavaScript", Youtube Video;
-//change the function to display the results somewhere else
-const searchTable = () => {
-    let filter = document.getElementById("input-search-form").value.toUpperCase();
-    console.log(filter);
+const sortButton = document.createElement('button');
+sortButton.classList = "sort-button";
+sortButton.textContent = "A-Z";
+mainTable.append(sortButton);
+
+
+
+
+//const sortCollection = () => {
+
     
-    for(let i = 0 ; i < rows.length; i++) {
-        let td = rows[i].getElementsByTagName("td")[0];
+    //let a = rows[0][0];
+    //let b = rows[1][0];
 
-        if (td) {
-            let textValue = td.textContent || td.innerHTML;
-            if(textValue.toUpperCase().indexOf(filter) > -1) {
-                rows[i].getElementsByClassName.display = "";
-            } else {
-                rows[i].style.display = "none";
-            }
-        } 
-    }
-}
 
+    //return rows.sort((a,b) => a < b);
+
+//}
+
+//if(sortButton) {sortCollection()};

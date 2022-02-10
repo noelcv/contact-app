@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/css/main.css">
+    <title>Contact++</title>
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Contact App</h1>
+        <p id="motto-header">Keep them closer</p>
+        <br>
+       
+    </header>
+
+    <main>
+        <hr class= "section-line"><br><br>
+
+        <section class="search-bar" id="search-area">
+        
+            <h2>Search</h2>
+        
+            <form action="#" method="GET" class="search-form"></form>
+        
+                <label for="input-search-form" id="search-label">Who are you looking for?</label>
+        
+                <input type="text" name="input-search-form" class="input-search-form" id="input-search-form" placeholder="Start typing the name here..." value="" onkeyup="searchTable()">
+        
+                <input type="submit" value="Search" id="submit-search-button">
+           </form>
+          
+        </section>
+
+        <br><br><br><br><hr class= "section-line"><br><br>
+
+        <section class="add-contact" id="add-contact">
+            <h2>Add new contact</h2>
+            <form action="#" method="GET" id="add-form">
+            <label for="input-first-name" value="Name" class="input-label">Name</label> <br>       
+            <input type="text" class="input-entry"id="input-first-name" name="input-first-name" value="" placeholder="First name" required></td><br> <br> 
+            
+            
+            <label for="input-last-name" value="Name" class="input-label">Last Name</label> <br> 
+            <input type="text" class="input-entry-alt"id="input-last-name" name="input-last-name" placeholder="Last name" required></td> <br><br> 
+           
+        
+            <label for="input-phone-number" value="Name" class="input-label">Phone Number</label> <br> 
+            <input type="number" class="input-entry" id="input-phone-number" name="input-phone-number" minlenght="3" maxlength="12" placeholder="00352-000-000-000" required></td> <br> <br> 
+            
+        
+            <label for="input-address" value="Name" class="input-label">Address</label> <br> 
+            <input type="textarea" class="input-entry" id="input-address" name="input-address" placeholder="Num, Street, City" required></td> <br> <br> 
+            
+    
+            <input type="submit" id="submit-contact-button" name="submit-contact-button" value="Add new contact"> <br> <br> 
+            </form>
+
+            <button id="restart-contact-button" name="restart-contact-button">Restart</button> 
+
+            
+                
+
+        </section>
+
+
+        <br><br><br><br><hr class= "section-line"><br><br>
+    
+        
+        <section class="search-results">
+
+
+            <h2>Browse Collection</h2>
+            <table class='main-table' id='main-table'>
+                <thead class="table-head" id="table-head">
+                    <th class="th-col-title" id="th-first-name">First Name</th>
+                    <th class="th-col-title" id="th-last-name">Last Name</th>
+                    <th class="th-col-title" id="th-phone-number">Phone</th>
+                    <th class="th-col-title" id="th-address">Address</th>
+                    <th class="th-col-title" id="th-options"></th>
+                </thead>
+            
+                <tbody class="table-body" id="table-body">
+                    <!--the results are created dinamically in JS-->
+                </tbody>
+            
+            
+            
+            </table>
+
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src ="contactapp.js"></script>
+   
+
+</body>
+</html>
+
+
+
