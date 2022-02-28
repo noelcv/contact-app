@@ -2,12 +2,10 @@ html {
     background-color: #777;
 }
 
-
 body {
     color: #9FD9D7;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
 
 h1 {
     text-align: center;
@@ -16,7 +14,7 @@ h1 {
 }
 
 h2 {
-     text-align: center;
+    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     color: #9FD9D7; 
 }
@@ -81,7 +79,7 @@ label {
         background-color: whitesmoke;
         width: 150px;
         height: auto;
-        color: violet;
+        color: #000;
         font-size: 16px;
         font-weight: bold;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -90,28 +88,30 @@ label {
 
 .add-contact {
     display: flex;
-    flex-direction: column;
+    flex-direction:row;
     align-items:center;
-    justify-content:flex-start; 
+    margin-left: 100px;
+    ;
+    
 
 }
 
-.input-entry {
-    flex: 1;
-    display: flex-start;
-
-}
 
 .main-table {
     display: inline-flexbox;
     letter-spacing: 1px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    margin-left: 100px;
+    margin-right:20%;
+    padding: 20px 2px 2px 0px;
+    
 }
 
 th {
     text-align: center;
+    line-height: 2;
     letter-spacing: 0.5px;
 }
 
@@ -119,10 +119,9 @@ td {
     color: #111;
     background-color: #999;
     text-align: center;
+    font-size: larger;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    line-height: 2;
 }
-
 
 
 .button-edit-alt {
@@ -164,3 +163,6 @@ td {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+#edit-entry {
+   display: none;
+}

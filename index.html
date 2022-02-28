@@ -5,21 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="resources/css/main.css">
-    <title>Contact++</title>
+    <title>Contact App</title>
 </head>
 
 <body>
 
     <header>
 
-        <h1>Contact++</h1>
+        <h1>Contact App</h1>
         <p id="motto-header">Keep them closer</p>
         <br>
        
     </header>
 
     <main>
-        <hr class= "section-line"><br><br>
+        <hr class= "section-line"><br>
 
         <section class="search-bar" id="search-area">
         
@@ -29,50 +29,42 @@
         
                 <label for="input-search-form" id="search-label">Who are you looking for?</label>
         
-                <input type="text" name="input-search-form" class="input-search-form" id="input-search-form" placeholder="Start typing the name here..." value="" onkeyup="searchTable()">
+                <input type="text" name="input-search-form" class="input-search-form" id="input-search-form" placeholder="Start typing the name here..." value="">
         
-                <input type="submit" value="Search" id="submit-search-button">
+               
            </form>
           
         </section>
 
-        <br><br><br><br><hr class= "section-line"><br><br>
+    <br><br><hr class= "section-line"><br>
 
-        <section class="add-contact" id="add-contact">
             <h2>Add new contact</h2>
+        <section class="add-contact" id="add-contact">
+            
+            
             <form action="#" method="GET" id="add-form">
-            <label for="input-first-name" value="Name" class="input-label">Name</label> <br>       
-            <input type="text" class="input-entry"id="input-first-name" name="input-first-name" value="" required></td><br> <br> 
+            <label for="input-first-name" value="Name" class="input-label">First Name</label>     
+            <input type="text" class="input-entry"id="input-first-name" name="input-first-name" value="" pattern=".{2,35}" required oninvalid="this.setCustomValidity('The first name will only be accepted if it has at least 2 characters')" oninput="this.setCustomValidity('')"  placeholder="First name" ></td>     
             
+            <label for="input-last-name" value="Name" class="input-label">Last Name</label>
+            <input type="text" class="input-entry-alt"id="input-last-name" name="input-last-name" pattern=".{2,35}" required oninvalid="this.setCustomValidity('The last name shall have at least 2 characters')" oninput="this.setCustomValidity('')" placeholder="Last name"></td> 
             
-            <label for="input-last-name" value="Name" class="input-label">Last Name</label> <br> 
-            <input type="text" class="input-entry-alt"id="input-last-name" name="input-last-name" required></td> <br><br> 
-           
+            <label for="input-phone-number" value="Name" class="input-label">Phone Number</label>
+            <input type="tel" class="input-entry" id="input-phone-number" name="input-phone-number" minlength="3" maxlength="18" required oninvalid="this.setCustomValidity('The phone number needs at least 3 numbers')" oninput="this.setCustomValidity('')"placeholder="00352-000-000-000"></td>
         
-            <label for="input-phone-number" value="Name" class="input-label">Phone Number</label> <br> 
-            <input type="number" class="input-entry" id="input-phone-number" name="input-phone-number" minlenght="3" maxlength="12" required></td> <br> <br> 
-            
+            <label for="input-address" value="Name" class="input-label">Address</label>
+            <input type="textarea" class="input-entry" id="input-address" name="input-address" pattern=".{5,70}" required oninvalid="this.setCustomValidity('The address field requires at least 5 characters')" oninput="this.setCustomValidity('')" placeholder="Num, Street, City"></td>
         
-            <label for="input-address" value="Name" class="input-label">Address</label> <br> 
-            <input type="textarea" class="input-entry" id="input-address" name="input-address" required></td> <br> <br> 
-            
-    
-            <input type="submit" id="submit-contact-button" name="submit-contact-button" value="Add new contact"> <br> <br> 
-            </form>
-
+            <input type="submit" id="submit-contact-button" name="submit-contact-button" value="Add new contact">
             <button id="restart-contact-button" name="restart-contact-button">Restart</button> 
-
-            
-                
+            </form>
 
         </section>
 
 
-        <br><br><br><br><hr class= "section-line"><br><br>
+   <br><hr class= "section-line">
     
-        
         <section class="search-results">
-
 
             <h2>Browse Collection</h2>
             <table class='main-table' id='main-table'>
@@ -87,21 +79,12 @@
                 <tbody class="table-body" id="table-body">
                     <!--the results are created dinamically in JS-->
                 </tbody>
-            
-            
-            
             </table>
-
         </section>
     </main>
-    <footer>
-
-    </footer>
-
    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src ="app.js"></script>
-   
 
 </body>
 </html>
