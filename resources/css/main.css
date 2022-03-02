@@ -89,11 +89,13 @@ label {
 .add-contact {
     display: flex;
     flex-direction:row;
-    align-items:center;
+    width: 350px;
     margin: 0 auto;
     ;
-    
+}
 
+.input-entry {
+    width: 350px;
 }
 
 
