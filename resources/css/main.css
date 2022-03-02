@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html {
     background-color: #777;
 }
@@ -16,7 +22,8 @@ h1 {
 h2 {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    color: #9FD9D7; 
+    color: #9FD9D7;
+    margin-top: 10px;
 }
 
 label {
@@ -33,28 +40,26 @@ label {
 
 .search-bar {
     text-align: center;
+    width: 350px;
+    margin: 0 auto;
+    
+}
+
+#search-label {
+    color: #9FD9D7;
+    font-weight:500;
+    margin-bottom: 10 px;
 }
 
 #input-search-form {
     background-color: whitesmoke;
     border-radius: 10%;
     border: 4px solid #9FD9D7;
+    padding: 15px;
     width: 200px;
-    height: 20px;
+    height: 30px;
     text-align: left;
 }
-
-#submit-search-button {
-    background-color: yellow;
-    border: 2px solid #9FD9D7;
-    color: black;
-    width: 120px;
-    height: 28px;
-    font-size: 16px;
-    font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
 
 .section-line {
     color:yellow;
@@ -69,31 +74,38 @@ label {
         height: auto;
         text-align: center;
         font-weight: bold;
-        font-size: 18px;
+        font-size: 16px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         display: on;
+        margin-top: 10px;
+        padding: 10px;
     }
 
 #restart-contact-button {
         border: 2px solid #9FD9D7;
         background-color: whitesmoke;
-        width: 150px;
+        width: 144px;
         height: auto;
         color: #000;
         font-size: 16px;
         font-weight: bold;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-top: 10px;
+        padding: 9px;
     }
 
 
 .add-contact {
     display: flex;
     flex-direction:row;
-    align-items:center;
-    margin-left: 100px;
-    ;
-    
+    width: 350px;
+    margin: 0 auto;
+}
 
+.input-entry {
+    width: 350px;
+    padding: 5px 0px 5px 5px;
+    margin: 20 px;
 }
 
 
@@ -103,9 +115,8 @@ label {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     justify-content: center;
     align-items: center;
-    margin-left: 100px;
-    margin-right:20%;
-    padding: 20px 2px 2px 0px;
+    margin: 0 auto;
+    padding: 10px 2px 2px 0px;
     
 }
 
@@ -113,6 +124,7 @@ th {
     text-align: center;
     line-height: 2;
     letter-spacing: 0.5px;
+    padding: 10px;
 }
 
 td {    
@@ -128,11 +140,11 @@ td {
     border: 2px solid yellow;
     background-color: #9FD9D7;
     color: black;
-
     height: 100px;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: inline;
+    padding: 10px;
 }
 
 #save-button {
@@ -152,6 +164,7 @@ td {
     height: 100px;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5px;
 }
 
 .editing-mode {
@@ -165,4 +178,8 @@ td {
 
 #edit-entry {
    display: none;
+}
+
+.td-entry {
+    padding: 10px;
 }

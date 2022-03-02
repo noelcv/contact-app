@@ -9,6 +9,7 @@
 As part of my Admission Process for Codeworks' Software Enginnering Intensive Bootcamp, I was challenged to build a simple address book app with HTML, CSS, JavaScript and JQuery.
 
 ### Latest Updates: 
+:white_check_mark: optimized UI with CSS Box Model
 :white_check_mark: refactored the code to JQuery;  
 :white_check_mark: fixed the search bar issues that were preventing the user to retrieve the rest of the search results;  
 :white_check_mark: added additional validation rules to the Add Contact form to prevent unintended user inputs to be passed;  
@@ -40,5 +41,7 @@ One shall not underestimate the time required to accomplish each task. As a begi
 Coding Assignment Submitted on Feb 14, 2022
 
 README.md updated on Feb 28, 2022 - to include further learnings on Markdown
+
+UI updated on Mar 2, 2022
 
 *Noel Vieira*
