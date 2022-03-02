@@ -33,13 +33,22 @@ label {
 
 .search-bar {
     text-align: center;
+    width: 350px;
     margin: 0 auto;
+    
+}
+
+#search-label {
+    color: #9FD9D7;
+    font-weight:500;
+    margin-bottom: 10 px;
 }
 
 #input-search-form {
     background-color: whitesmoke;
     border-radius: 10%;
     border: 4px solid #9FD9D7;
+    padding: 7px;
     width: 200px;
     height: 20px;
     text-align: left;
