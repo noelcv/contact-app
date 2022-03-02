@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    padding: 0px;
+    padding: 0;
 }
 
 html {
@@ -21,7 +21,8 @@ h1 {
 h2 {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    color: #9FD9D7; 
+    color: #9FD9D7;
+    margin-top: 10px;
 }
 
 label {
@@ -105,6 +106,7 @@ label {
 .input-entry {
     width: 350px;
     padding: 5px 0px 5px 5px;
+    margin: 20 px;
 }
 
 
