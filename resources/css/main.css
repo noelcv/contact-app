@@ -1,9 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-* {
     box-sizing: border-box;
 }
 
@@ -58,13 +55,11 @@ label {
     background-color: whitesmoke;
     border-radius: 10%;
     border: 4px solid #9FD9D7;
-    padding: 7px;
+    padding: 15px;
     width: 200px;
-    height: 20px;
+    height: 30px;
     text-align: left;
 }
-
-
 
 .section-line {
     color:yellow;
