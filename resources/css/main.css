@@ -33,6 +33,7 @@ label {
 
 .search-bar {
     text-align: center;
+    margin: 0 auto;
 }
 
 #input-search-form {
@@ -44,16 +45,6 @@ label {
     text-align: left;
 }
 
-#submit-search-button {
-    background-color: yellow;
-    border: 2px solid #9FD9D7;
-    color: black;
-    width: 120px;
-    height: 28px;
-    font-size: 16px;
-    font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
 
 
 .section-line {
