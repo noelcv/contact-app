@@ -124,6 +124,7 @@ th {
     text-align: center;
     line-height: 2;
     letter-spacing: 0.5px;
+    padding: 10px;
 }
 
 td {    
@@ -143,6 +144,7 @@ td {
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: inline;
+    padding: 10px;
 }
 
 #save-button {
@@ -162,6 +164,7 @@ td {
     height: 100px;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5px;
 }
 
 .editing-mode {
@@ -175,4 +178,8 @@ td {
 
 #edit-entry {
    display: none;
+}
+
+.td-entry {
+    padding: 10px;
 }
