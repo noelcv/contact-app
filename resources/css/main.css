@@ -65,7 +65,7 @@ label {
         border: 2px solid yellow;
         background-color: #9FD9D7;
         color: black;
-        width: 175px;
+        width: 200px;
         height: auto;
         text-align: center;
         font-weight: bold;
@@ -79,14 +79,14 @@ label {
 #restart-contact-button {
         border: 2px solid #9FD9D7;
         background-color: whitesmoke;
-        width: 175px;
+        width: 153.4px;
         height: auto;
         color: #000;
         font-size: 16px;
         font-weight: bold;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         margin-top: 10px;
-        padding: 8px;
+        padding: 9px;
     }
 
 
