@@ -65,24 +65,26 @@ label {
         border: 2px solid yellow;
         background-color: #9FD9D7;
         color: black;
-        width: 200px;
+        width: 175px;
         height: auto;
         text-align: center;
         font-weight: bold;
-        font-size: 18px;
+        font-size: 16px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         display: on;
+        margin-top: 10px;
     }
 
 #restart-contact-button {
         border: 2px solid #9FD9D7;
         background-color: whitesmoke;
-        width: 150px;
+        width: 175px;
         height: auto;
         color: #000;
         font-size: 16px;
         font-weight: bold;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-top: 10px;
     }
 
 
@@ -91,7 +93,6 @@ label {
     flex-direction:row;
     width: 350px;
     margin: 0 auto;
-    ;
 }
 
 .input-entry {
@@ -129,7 +130,6 @@ td {
     border: 2px solid yellow;
     background-color: #9FD9D7;
     color: black;
-
     height: 100px;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
