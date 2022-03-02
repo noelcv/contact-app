@@ -90,7 +90,7 @@ label {
     display: flex;
     flex-direction:row;
     align-items:center;
-    margin-left: 100px;
+    margin: 0 auto;
     ;
     
 
