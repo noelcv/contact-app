@@ -73,6 +73,7 @@ label {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         display: on;
         margin-top: 10px;
+        padding: 10px;
     }
 
 #restart-contact-button {
@@ -85,6 +86,7 @@ label {
         font-weight: bold;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         margin-top: 10px;
+        padding: 8px;
     }
 
 
@@ -97,6 +99,7 @@ label {
 
 .input-entry {
     width: 350px;
+    padding: 5px 0px 5px 5px;
 }
 
 
