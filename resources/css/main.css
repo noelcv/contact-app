@@ -103,9 +103,8 @@ label {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     justify-content: center;
     align-items: center;
-    margin-left: 100px;
-    margin-right:20%;
-    padding: 20px 2px 2px 0px;
+    margin: 0 auto;
+    padding: 10px 2px 2px 0px;
     
 }
 
