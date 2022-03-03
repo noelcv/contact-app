@@ -33,6 +33,9 @@ h2 {
     margin-top: 10px;
 }
 
+button {
+    cursor: pointer;
+}
 /*search-bar section*/
 
 .search-bar {
@@ -77,6 +80,7 @@ h2 {
         display: on;
         margin-top: 10px;
         padding: 10px;
+        cursor: pointer;
     }
 
 #restart-contact-button {
