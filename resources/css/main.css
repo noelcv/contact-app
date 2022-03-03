@@ -86,7 +86,7 @@ button {
 #submit-contact-button:active {
         border: 2px solid yellow;
         background-color: #476d6c;
-        color: black;
+        color: yellow;
         width: 200px;
         height: auto;
         text-align: center;
@@ -104,6 +104,18 @@ button {
         width: 144px;
         height: auto;
         color: #000;
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: 10px;
+        padding: 9px;
+    }
+
+#restart-contact-button:active {
+        border: 2px solid #000;
+        background-color: rgb(235, 149, 149);
+        width: 144px;
+        height: auto;
+        color: white;
         font-size: 16px;
         font-weight: bold;
         margin-top: 10px;
