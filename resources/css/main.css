@@ -2,21 +2,28 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 html {
-    background-color: #777;
+    background-color: hsla(200, 70%, 20%, 0.7);
 }
 
 body {
     color: #9FD9D7;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h1 {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     color: #9FD9D7; 
+}
+
+p {
+    text-align: center;
+    font-style: italic;
+    font-size: large;
+    color: yellow;
 }
 
 h2 {
@@ -26,17 +33,10 @@ h2 {
     margin-top: 10px;
 }
 
-label {
-    color: #9FD9D7;
-    font-weight:500;
+button {
+    cursor: pointer;
 }
-
-#motto-header {
-    text-align: center;
-    font-style: italic;
-    font-size: large;
-    color: yellow;
-}
+/*search-bar section*/
 
 .search-bar {
     text-align: center;
@@ -51,6 +51,8 @@ label {
     margin-bottom: 10 px;
 }
 
+/*add-new-contact form*/
+
 #input-search-form {
     background-color: whitesmoke;
     border-radius: 10%;
@@ -62,11 +64,11 @@ label {
 }
 
 .section-line {
-    color:yellow;
+    color: hsla(100,80%,80%, 0.1);
     outline-style: solid;
 }
 
-#submit-contact-button{
+#submit-contact-button {
         border: 2px solid yellow;
         background-color: #9FD9D7;
         color: black;
@@ -75,10 +77,39 @@ label {
         text-align: center;
         font-weight: bold;
         font-size: 16px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
         display: on;
         margin-top: 10px;
         padding: 10px;
+        cursor: pointer;
+    }
+
+#submit-contact-button:hover {
+        border: 2px solid yellow;
+        background-color: #476d6c;
+        color: white;
+        width: 200px;
+        height: auto;
+        text-align: center;
+        font-weight: bold;
+        font-size: 16px;
+        display: on;
+        margin-top: 10px;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+#submit-contact-button:active {
+        border: 2px solid yellow;
+        color: yellow;
+        width: 200px;
+        height: auto;
+        text-align: center;
+        font-weight: bold;
+        font-size: 16px;
+        display: on;
+        margin-top: 10px;
+        padding: 10px;
+        cursor: pointer;
     }
 
 #restart-contact-button {
@@ -89,7 +120,29 @@ label {
         color: #000;
         font-size: 16px;
         font-weight: bold;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-top: 10px;
+        padding: 9px;
+    }
+
+#restart-contact-button:hover {
+        border: 2px solid #9FD9D7;
+        background-color: rgb(235, 149, 149);
+        width: 144px;
+        height: auto;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: 10px;
+        padding: 9px;
+    }
+
+#restart-contact-button:active {
+        border: 2px solid white;
+        width: 144px;
+        height: auto;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
         margin-top: 10px;
         padding: 9px;
     }
@@ -108,11 +161,10 @@ label {
     margin: 20 px;
 }
 
-
+/*table content*/
 .main-table {
     display: inline-flexbox;
     letter-spacing: 1px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
@@ -123,16 +175,20 @@ label {
 th {
     text-align: center;
     line-height: 2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    line-height: 18px;
     letter-spacing: 0.5px;
     padding: 10px;
 }
 
 td {    
     color: #111;
-    background-color: #999;
+    background-color: hsla(333, 6%, 65%, 0.884);
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     font-size: larger;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
@@ -142,7 +198,25 @@ td {
     color: black;
     height: 100px;
     font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: inline;
+    padding: 10px;
+}
+
+.button-edit-alt:hover {
+    border: 2px solid yellow;
+    background-color: #476d6c;
+    color: white;
+    height: 100px;
+    font-weight: bold;
+    display: inline;
+    padding: 10px;
+}
+
+.button-edit-alt:active {
+    border: 2px solid yellow;
+    color: yellow;
+    height: 100px;
+    font-weight: bold;
     display: inline;
     padding: 10px;
 }
@@ -153,7 +227,23 @@ td {
     color: black;
     height: 100px;
     font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: inline;
+}
+
+#save-button:hover {
+    border: 2px solid yellow;
+    background-color: #476d6c;
+    color: black;
+    height: 100px;
+    font-weight: bold;
+    display: inline;
+}
+
+#save-button:active {
+    border: 2px solid yellow;
+    color: yellow;
+    height: 100px;
+    font-weight: bold;
     display: inline;
 }
 
@@ -163,17 +253,33 @@ td {
     color: #222;
     height: 100px;
     font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5px;
+}
+
+.button-delete-alt:hover {
+    border: 2px solid #9FD9D7;
+    background-color:  rgb(235, 149, 149);
+    color: white;
+    height: 100px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.button-delete-alt:active {
+    border: 2px solid white;
+    color: black;
+    height: 100px;
+    font-weight: bold;
     padding: 5px;
 }
 
 .editing-mode {
     border: 2px solid #9FD9D7;
-    background-color: whitesmoke;
-    color: #222;
+    background-color: hsla(100, 100%, 100%, 0.8);
+    color: rgb(0, 0, 0);
     height: 100px;
-    font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-weight: 900;
 }
 
 #edit-entry {
