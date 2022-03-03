@@ -177,9 +177,28 @@ td {
     padding: 10px;
 }
 
+.button-edit-alt:active {
+    border: 2px solid yellow;
+    background-color: #476d6c;
+    color: yellow;
+    height: 100px;
+    font-weight: bold;
+    display: inline;
+    padding: 10px;
+}
+
 #save-button {
     border: 2px solid #9FD9D7;
     background-color: yellow;
+    color: black;
+    height: 100px;
+    font-weight: bold;
+    display: inline;
+}
+
+#save-button:active {
+    border: 2px solid yellow;
+    background-color: #9FD9D7;
     color: black;
     height: 100px;
     font-weight: bold;
@@ -190,6 +209,15 @@ td {
     border: 2px solid #9FD9D7;
     background-color: whitesmoke;
     color: #222;
+    height: 100px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.button-delete-alt:active {
+    border: 2px solid #000;
+    background-color:  rgb(235, 149, 149);
+    color: white;
     height: 100px;
     font-weight: bold;
     padding: 5px;
