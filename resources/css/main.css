@@ -68,9 +68,24 @@ button {
     outline-style: solid;
 }
 
-#submit-contact-button{
+#submit-contact-button {
         border: 2px solid yellow;
         background-color: #9FD9D7;
+        color: black;
+        width: 200px;
+        height: auto;
+        text-align: center;
+        font-weight: bold;
+        font-size: 16px;
+        display: on;
+        margin-top: 10px;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+#submit-contact-button:active {
+        border: 2px solid yellow;
+        background-color: #476d6c;
         color: black;
         width: 200px;
         height: auto;
