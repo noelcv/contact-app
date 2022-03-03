@@ -83,9 +83,23 @@ button {
         cursor: pointer;
     }
 
-#submit-contact-button:active {
+#submit-contact-button:hover {
         border: 2px solid yellow;
         background-color: #476d6c;
+        color: white;
+        width: 200px;
+        height: auto;
+        text-align: center;
+        font-weight: bold;
+        font-size: 16px;
+        display: on;
+        margin-top: 10px;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+#submit-contact-button:active {
+        border: 2px solid yellow;
         color: yellow;
         width: 200px;
         height: auto;
@@ -110,9 +124,20 @@ button {
         padding: 9px;
     }
 
-#restart-contact-button:active {
-        border: 2px solid #000;
+#restart-contact-button:hover {
+        border: 2px solid #9FD9D7;
         background-color: rgb(235, 149, 149);
+        width: 144px;
+        height: auto;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: 10px;
+        padding: 9px;
+    }
+
+#restart-contact-button:active {
+        border: 2px solid white;
         width: 144px;
         height: auto;
         color: white;
@@ -177,9 +202,18 @@ td {
     padding: 10px;
 }
 
-.button-edit-alt:active {
+.button-edit-alt:hover {
     border: 2px solid yellow;
     background-color: #476d6c;
+    color: white;
+    height: 100px;
+    font-weight: bold;
+    display: inline;
+    padding: 10px;
+}
+
+.button-edit-alt:active {
+    border: 2px solid yellow;
     color: yellow;
     height: 100px;
     font-weight: bold;
@@ -196,10 +230,18 @@ td {
     display: inline;
 }
 
-#save-button:active {
+#save-button:hover {
     border: 2px solid yellow;
     background-color: #9FD9D7;
     color: black;
+    height: 100px;
+    font-weight: bold;
+    display: inline;
+}
+
+#save-button:active {
+    border: 2px solid yellow;
+    color: yellow;
     height: 100px;
     font-weight: bold;
     display: inline;
@@ -214,10 +256,18 @@ td {
     padding: 5px;
 }
 
-.button-delete-alt:active {
-    border: 2px solid #000;
+.button-delete-alt:hover {
+    border: 2px solid #9FD9D7;
     background-color:  rgb(235, 149, 149);
     color: white;
+    height: 100px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.button-delete-alt:active {
+    border: 2px solid white;
+    color: black;
     height: 100px;
     font-weight: bold;
     padding: 5px;
