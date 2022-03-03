@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 html {
@@ -10,7 +11,6 @@ html {
 
 body {
     color: #9FD9D7;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h1 {
@@ -75,7 +75,6 @@ label {
         text-align: center;
         font-weight: bold;
         font-size: 16px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
         display: on;
         margin-top: 10px;
         padding: 10px;
@@ -89,7 +88,6 @@ label {
         color: #000;
         font-size: 16px;
         font-weight: bold;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
         margin-top: 10px;
         padding: 9px;
     }
@@ -112,7 +110,6 @@ label {
 .main-table {
     display: inline-flexbox;
     letter-spacing: 1px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
@@ -132,7 +129,6 @@ td {
     background-color: hsla(333, 6%, 65%, 0.884);
     text-align: center;
     font-size: larger;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
@@ -142,7 +138,6 @@ td {
     color: black;
     height: 100px;
     font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: inline;
     padding: 10px;
 }
@@ -153,7 +148,6 @@ td {
     color: black;
     height: 100px;
     font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: inline;
 }
 
@@ -163,7 +157,6 @@ td {
     color: #222;
     height: 100px;
     font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 5px;
 }
 
@@ -173,7 +166,6 @@ td {
     color: #222;
     height: 100px;
     font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #edit-entry {
