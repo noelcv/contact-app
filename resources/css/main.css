@@ -19,6 +19,13 @@ h1 {
     color: #9FD9D7; 
 }
 
+p {
+    text-align: center;
+    font-style: italic;
+    font-size: large;
+    color: yellow;
+}
+
 h2 {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -26,17 +33,7 @@ h2 {
     margin-top: 10px;
 }
 
-label {
-    color: #9FD9D7;
-    font-weight:500;
-}
-
-#motto-header {
-    text-align: center;
-    font-style: italic;
-    font-size: large;
-    color: yellow;
-}
+/*search-bar section*/
 
 .search-bar {
     text-align: center;
@@ -50,6 +47,8 @@ label {
     font-weight:500;
     margin-bottom: 10 px;
 }
+
+/*add-new-contact form*/
 
 #input-search-form {
     background-color: whitesmoke;
@@ -106,7 +105,7 @@ label {
     margin: 20 px;
 }
 
-
+/*table content*/
 .main-table {
     display: inline-flexbox;
     letter-spacing: 1px;
@@ -120,7 +119,7 @@ label {
 th {
     text-align: center;
     line-height: 2;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 800;
     line-height: 18px;
     letter-spacing: 0.5px;
