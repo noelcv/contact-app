@@ -120,6 +120,8 @@ label {
 th {
     text-align: center;
     line-height: 2;
+    font-family: 'Montserrat', sans serif;
+    font-weight: 800;
     letter-spacing: 0.5px;
     padding: 10px;
 }
@@ -128,6 +130,8 @@ td {
     color: #111;
     background-color: hsla(333, 6%, 65%, 0.884);
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     font-size: larger;
 }
 
