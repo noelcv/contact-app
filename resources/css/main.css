@@ -120,8 +120,9 @@ label {
 th {
     text-align: center;
     line-height: 2;
-    font-family: 'Montserrat', sans serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
     font-weight: 800;
+    line-height: 18px;
     letter-spacing: 0.5px;
     padding: 10px;
 }
@@ -166,10 +167,11 @@ td {
 
 .editing-mode {
     border: 2px solid #9FD9D7;
-    background-color: whitesmoke;
-    color: #222;
+    background-color: hsla(100, 100%, 100%, 0.8);
+    color: rgb(0, 0, 0);
     height: 100px;
-    font-weight: bold;
+    font-style: italic;
+    font-weight: 900;
 }
 
 #edit-entry {
