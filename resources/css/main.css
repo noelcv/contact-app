@@ -51,16 +51,22 @@ button {
     margin-bottom: 10 px;
 }
 
-/*add-new-contact form*/
+
 
 #input-search-form {
     background-color: whitesmoke;
-    border-radius: 10%;
-    border: 4px solid #9FD9D7;
+    border-radius: 0%;
     padding: 15px;
     width: 300px;
     height: 30px;
     text-align: left;
+}
+
+
+input:focus {
+    border: 4px solid #9FD9D7;
+    box-shadow: 2px 3px hsla(40, 100%, 50%, 1);
+    outline: none !important;
 }
 
 .section-line {
@@ -68,6 +74,7 @@ button {
     outline-style: solid;
 }
 
+/*add-new-contact form*/
 
 #submit-contact-button {
         border: 2px solid hsla(40, 100%, 50%, 1);;
@@ -160,6 +167,10 @@ button {
     width: 350px;
     padding: 5px 0px 5px 5px;
     margin: 20 px;
+}
+
+.input-entry:focus{
+    border: 1px solid #9FD9D7;
 }
 
 /*table content*/
