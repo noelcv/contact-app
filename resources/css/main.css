@@ -262,7 +262,7 @@ td {
 
 .button-delete-alt {
     border: 2px solid #9FD9D7;
-    background-color: whitesmoke;
+    background-color: rgb(235, 149, 149);
     color: #222;
     height: 100px;
     font-weight: bold;
@@ -271,8 +271,8 @@ td {
 
 .button-delete-alt:hover {
     border: 2px solid #9FD9D7;
-    background-color:  rgb(235, 149, 149);
-    color: white;
+    background-color:  rgb(167, 7, 7);
+    color: whitesmoke;
     height: 100px;
     font-weight: bold;
     padding: 5px;
@@ -280,7 +280,7 @@ td {
 
 .button-delete-alt:active {
     border: 2px solid white;
-    color: black;
+    color: rgb(235, 149, 149);
     height: 100px;
     font-weight: bold;
     padding: 5px;
