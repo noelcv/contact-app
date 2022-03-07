@@ -204,7 +204,6 @@ td {
     cursor: default;
 }
 
-
 .button-edit-alt {
     border: 2px solid hsla(40, 100%, 50%, 1);
     background-color: #9FD9D7;
@@ -226,7 +225,7 @@ td {
 }
 
 .button-edit-alt:active {
-    border: 2px solid hsla(40, 100%, 50%, 1);;
+    border: 2px solid #9FD9D7;
     color: hsla(40, 100%, 50%, 1);
     height: 100px;
     font-weight: bold;
