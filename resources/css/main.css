@@ -23,7 +23,7 @@ p {
     text-align: center;
     font-style: italic;
     font-size: large;
-    color: yellow;
+    color: hsla(40, 100%, 50%, 1);
 }
 
 h2 {
@@ -46,7 +46,7 @@ button {
 }
 
 #search-label {
-    color: #9FD9D7;
+    color:hsla(40, 100%, 50%, 1);;
     font-weight:500;
     margin-bottom: 10 px;
 }
@@ -68,8 +68,12 @@ button {
     outline-style: solid;
 }
 
+.input-label {
+    color: hsla(40, 100%, 50%, 1);
+}
+
 #submit-contact-button {
-        border: 2px solid yellow;
+        border: 2px solid hsla(40, 100%, 50%, 1);;
         background-color: #9FD9D7;
         color: black;
         width: 200px;
@@ -84,7 +88,7 @@ button {
     }
 
 #submit-contact-button:hover {
-        border: 2px solid yellow;
+        border: 2px solid hsla(40, 100%, 50%, 1);;
         background-color: #476d6c;
         color: white;
         width: 200px;
@@ -99,8 +103,8 @@ button {
     }
 
 #submit-contact-button:active {
-        border: 2px solid yellow;
-        color: yellow;
+        border: 2px solid hsla(40, 100%, 50%, 1);;
+        color: hsla(40, 100%, 50%, 1);
         width: 200px;
         height: auto;
         text-align: center;
@@ -194,7 +198,7 @@ td {
 
 
 .button-edit-alt {
-    border: 2px solid yellow;
+    border: 2px solid hsla(40, 100%, 50%, 1);
     background-color: #9FD9D7;
     color: black;
     height: 100px;
@@ -204,7 +208,7 @@ td {
 }
 
 .button-edit-alt:hover {
-    border: 2px solid yellow;
+    border: 2px solid hsla(40, 100%, 50%, 1);;
     background-color: #476d6c;
     color: white;
     height: 100px;
@@ -214,8 +218,8 @@ td {
 }
 
 .button-edit-alt:active {
-    border: 2px solid yellow;
-    color: yellow;
+    border: 2px solid hsla(40, 100%, 50%, 1);;
+    color: hsla(40, 100%, 50%, 1);
     height: 100px;
     font-weight: bold;
     display: inline;
@@ -224,7 +228,7 @@ td {
 
 #save-button {
     border: 2px solid #9FD9D7;
-    background-color: yellow;
+    background-color: hsla(40, 100%, 50%, 1);;
     color: black;
     height: 100px;
     font-weight: bold;
@@ -232,7 +236,7 @@ td {
 }
 
 #save-button:hover {
-    border: 2px solid yellow;
+    border: 2px solid hsla(40, 100%, 50%, 1);
     background-color: #476d6c;
     color: black;
     height: 100px;
@@ -241,8 +245,8 @@ td {
 }
 
 #save-button:active {
-    border: 2px solid yellow;
-    color: yellow;
+    border: 2px solid hsla(40, 100%, 50%, 1);
+    color: hsla(40, 100%, 50%, 1);
     height: 100px;
     font-weight: bold;
     display: inline;
