@@ -279,8 +279,9 @@ td {
 }
 
 .button-delete-alt:active {
-    border: 2px solid white;
-    color: rgb(235, 149, 149);
+    border: 2px solid rgb(167, 7, 7);
+    background-color:  rgb(235, 149, 149);
+    color: whitesmoke;
     height: 100px;
     font-weight: bold;
     padding: 5px;
