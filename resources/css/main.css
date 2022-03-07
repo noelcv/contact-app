@@ -79,7 +79,7 @@ input:focus {
 #submit-contact-button {
         border: 2px solid hsla(40, 100%, 50%, 1);;
         background-color: #9FD9D7;
-        color: black;
+        color: #1F1F1F;
         width: 200px;
         height: auto;
         text-align: center;
@@ -125,7 +125,7 @@ input:focus {
         background-color: whitesmoke;
         width: 144px;
         height: auto;
-        color: #000;
+        color: #1F1F1F;
         font-size: 16px;
         font-weight: bold;
         margin-top: 10px;
@@ -195,7 +195,7 @@ th {
 }
 
 td {    
-    color: #111;
+    color: #1F1F1F;
     background-color: hsla(240, 40%, 85%, 0.9);
     text-align: center;
     font-family: 'Montserrat', sans-serif;
@@ -207,7 +207,7 @@ td {
 .button-edit-alt {
     border: 2px solid hsla(40, 100%, 50%, 1);
     background-color: #9FD9D7;
-    color: black;
+    color: #1F1F1F;
     height: 100px;
     font-weight: bold;
     display: inline;
@@ -236,7 +236,7 @@ td {
 #save-button {
     border: 2px solid #9FD9D7;
     background-color: hsla(40, 100%, 50%, 1);;
-    color: black;
+    color: #1F1F1F;
     height: 100px;
     font-weight: bold;
     display: inline;
@@ -245,7 +245,7 @@ td {
 #save-button:hover {
     border: 2px solid hsla(40, 100%, 50%, 1);
     background-color: #476d6c;
-    color: black;
+    color: #1F1F1F;
     height: 100px;
     font-weight: bold;
     display: inline;
@@ -262,7 +262,7 @@ td {
 .button-delete-alt {
     border: 2px solid #9FD9D7;
     background-color: rgb(235, 149, 149);
-    color: #222;
+    color: #1F1F1F;
     height: 100px;
     font-weight: bold;
     padding: 5px;
@@ -289,7 +289,7 @@ td {
 .editing-mode {
     border: 2px solid #9FD9D7;
     background-color: hsla(100, 100%, 100%, 0.8);
-    color: rgb(0, 0, 0);
+    color: #1F1F1F;
     height: 100px;
     font-style: italic;
     font-weight: 900;
