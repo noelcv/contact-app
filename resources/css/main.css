@@ -51,10 +51,7 @@ button {
     margin-bottom: 10 px;
 }
 
-
-
 #input-search-form {
-    background-color: whitesmoke;
     border-radius: 0%;
     padding: 15px;
     width: 300px;
@@ -122,7 +119,7 @@ input:focus {
 
 #restart-contact-button {
         border: 2px solid #9FD9D7;
-        background-color: whitesmoke;
+        background-color: #D8D8D8;
         width: 144px;
         height: auto;
         color: #1F1F1F;
@@ -271,7 +268,7 @@ td {
 .button-delete-alt:hover {
     border: 2px solid #9FD9D7;
     background-color:  rgb(167, 7, 7);
-    color: whitesmoke;
+    color: #D8D8D8;
     height: 100px;
     font-weight: bold;
     padding: 5px;
@@ -280,7 +277,7 @@ td {
 .button-delete-alt:active {
     border: 2px solid rgb(167, 7, 7);
     background-color:  rgb(235, 149, 149);
-    color: whitesmoke;
+    color: #D8D8D8;
     height: 100px;
     font-weight: bold;
     padding: 5px;
