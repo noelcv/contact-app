@@ -91,7 +91,7 @@ input:focus {
 #submit-contact-button:hover {
         border: 2px solid hsla(40, 100%, 50%, 1);;
         background-color: #476d6c;
-        color: white;
+        color: #D8D8D8;
         width: 200px;
         height: auto;
         text-align: center;
@@ -134,7 +134,7 @@ input:focus {
         background-color: rgb(235, 149, 149);
         width: 144px;
         height: auto;
-        color: white;
+        color: #1F1F1F;
         font-size: 16px;
         font-weight: bold;
         margin-top: 10px;
@@ -142,10 +142,11 @@ input:focus {
     }
 
 #restart-contact-button:active {
-        border: 2px solid white;
+        border: 2px solid rgb(235, 149, 149);
+        background-color: #D8D8D8;
         width: 144px;
         height: auto;
-        color: white;
+        color: rgb(167, 7, 7);
         font-size: 16px;
         font-weight: bold;
         margin-top: 10px;
@@ -214,7 +215,7 @@ td {
 .button-edit-alt:hover {
     border: 2px solid hsla(40, 100%, 50%, 1);;
     background-color: #476d6c;
-    color: white;
+    color: #D8D8D8;
     height: 100px;
     font-weight: bold;
     display: inline;
